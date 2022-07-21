@@ -1,2 +1,2 @@
 # Web
-Record my Web learning.
+Record my Web learning on MDN.

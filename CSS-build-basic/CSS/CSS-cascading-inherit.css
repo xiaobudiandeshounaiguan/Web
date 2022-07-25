@@ -1,0 +1,40 @@
+/* body {
+    color: green;
+}
+          
+.my-class-1 a {
+    color: inherit;
+}
+          
+.my-class-2 a {
+    color: initial;
+}
+          
+.my-class-3 a {
+    color: unset;
+}
+    
+a {
+color:red;
+} */
+
+blockquote {
+    background-color: red;
+    border: 2px solid green;
+}
+        
+.fix-this {
+    /* all: unset; */
+    /* all:inherit; */
+    all:initial;
+}
+
+.classp {
+    /* !important 最高优先级，强烈建议不使用 */
+    color: red !important;
+}
+
+#idp {
+    color: green;
+}
+    

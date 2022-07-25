@@ -1,0 +1,16 @@
+.vw {
+    width: 50vw;
+    background-color: red;
+}
+
+.box {
+    /* 不透明度，0~1，越大越不透明 */
+    opacity: 0.6;
+    /* color: rgb(red, green, blue); */
+    /* color: rgba(red, green, blue, alpha); alpha不透明度(只是颜色的)*/
+    /* background-image 可以传渐变颜色 */
+    background-image: none;
+    min-width: 100px;
+    max-height: 2400px;
+    max-width: 100%;/* 可响应 */
+}

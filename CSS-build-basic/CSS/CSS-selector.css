@@ -1,0 +1,99 @@
+h1 .special {
+    color: red;
+}
+
+/* 选择设置了title属性的a */
+a[title] {}
+
+/* 选择href属性为。。。的a */
+a[href="https://www.example.com"] {}
+
+/* 选择p中的第一行 */
+p::first-line {}
+
+article *:first-child {}
+
+/* 选择article的初代子元素 */
+article>p {}
+
+.notebox {
+    border: 4px solid #666;
+    padding: .5em;
+}
+
+/* 选择同时属于这两个类的 */
+.notebox.warning {
+    border-color: orange;
+    font-weight: bold;
+}
+
+.notebox.danger {
+    border-color: red;
+    font-weight: bold;
+}
+
+/* 这样也是选择id，没啥区别 */
+p#myp {}
+
+/* 选择带有attr属性的 */
+a[attr] {}
+
+/* 选择attr属性值为value的 */
+a[attr=value] {}
+
+/* 选择attr 属性值中包含value的 */
+a[attr~=value] {}
+
+/* 匹配vaattr属性值为value 或 value-啥啥啥  */
+a[attr|=value] {}
+
+/* ^, $, * 子字符串匹配，类似 正则， 分别表示 以value开头、结尾，还有直接包含  */
+
+/* i 表示忽略大小写 */
+li[attr=value i] {}
+
+/* :开头 是伪类 */
+
+/* last-child,only-child,invalid 等等*/
+/* 选择 article的第一个孩子，如果是p则选中，否则不然 */
+/* article p:first-child {
+    font-size: 120%;
+    font-weight: bold;
+}    */
+
+/* hover,focus(键盘控制选中？) */
+
+/* ::开头是伪元素 */
+/* 选中article中p的第一行 */
+article p::first-line {}
+
+article p:first-child::first-line {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* ::before ::after  在所选元素前后插入content属性值，插入文本不太好，可以插一些视觉性的图标*/
+/* .box::before {
+    content: "This should show before the other content."
+} */
+/* 插入样式化内容 */
+.box::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+}
+
+/* 空格 选择子代 就是平常用的
+>    直接后代，
++    直接相连
+~    在其之后的兄弟 */
+
+span {
+    border-style:solid;
+    border-color: red;
+    border-width: 1px;
+    
+}

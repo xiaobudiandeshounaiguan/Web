@@ -1,0 +1,12 @@
+h1 {
+    writing-mode: vertical-rl;
+    /* 正常模式的width -> 横向模式的inline-size  正常模式的height -> 横向模式的block-size */
+    inline-size: 150px; 
+    /* 
+    正常模式 -> 通用映射
+    margin-top -> margin-block-start
+    margin-bottom -> margin-block-end
+    margin-left -> margin-inline-start
+    margin-right- > margin-inline-end
+    */
+}

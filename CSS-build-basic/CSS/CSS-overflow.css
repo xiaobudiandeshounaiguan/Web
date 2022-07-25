@@ -1,0 +1,9 @@
+div {
+    /* overflow: hidden; */
+    /* overflow: scroll; x he y 的复合*/
+    overflow-x: scroll;
+    overflow-y: scroll;
+    /* 由浏览器判断 */
+    overflow: auto;
+    /* 开发网页时要注意溢出，做测试 */
+}

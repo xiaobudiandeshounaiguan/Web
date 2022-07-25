@@ -1,0 +1,21 @@
+/* 使用替代盒模型,   替代盒模型的width/height=默认盒模型的width/height+2*(padding + border)   */
+.box {
+    box-sizing: border-box;
+}
+
+/* 全部替代 */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* 外边距折叠 你离人要1米，另一个人也离人1米，你们额距离最少是1米，而不是两米。你的外边距也可以是别人的外边距*/
+
+.links-list a{
+    display: inline-block;
+}

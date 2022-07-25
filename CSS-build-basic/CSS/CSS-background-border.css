@@ -1,0 +1,15 @@
+p {
+    background-image: url("");
+    background-repeat: repeat;
+    background-size: cover;
+    /* background-position: top center; */
+    background-position-x: center;
+    background-position-y: top;
+    /* ,设置多个背景图片 */
+    /* scroll fixed ,local */
+    background-attachment: fixed;
+    /* background 规矩： 位置/大小  颜色要在,后*/ 
+    /* 有背景图片时也要设置颜色，避免图片因为各种原因无法显示而对比度改变，文本看不清楚 */
+    border-radius: 2px 3px;
+    color: rgb(91, 60, 97);
+}

@@ -1,0 +1,43 @@
+html {
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 2.6em;
+}
+
+p {
+    font-size: 1.4em;
+    color:red;
+    /* 最后一个最好用最通用的网页安全字体，某字体单词不止一个则要用引号包裹 */
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+h1 + p {
+    font-style: oblique;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+body p:nth-child(3) {
+    text-decoration: overline solid green;
+}
+
+body p:nth-child(4) {
+    text-decoration: line-through dotted green;
+}
+
+body p:nth-child(5) {
+    text-shadow: 4px 2px 1px yellow;
+    text-align: center;
+    line-height: 1.5;/* =1.5em */
+}
+
+p::first-line {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+h2 {
+    font: 3em/1.5 Arial;
+}

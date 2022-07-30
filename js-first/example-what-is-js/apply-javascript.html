@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Apply JavaScript example</title>
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function createParagraph() {
+        let para = document.createElement('p');
+        para.textContent = '你点击了这个按钮！';
+        document.body.appendChild(para);
+      }
+
+      const buttons = document.querySelectorAll('button');
+
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', createParagraph);
+      }
+    });
+  </script> -->
+  <script src="script.js" async></script>
+</head>
+
+<body>
+  <button>Click me</button>
+
+
+  <p>脚本调用策略小结：</p>
+  <ul>
+
+    <li>如果脚本无需等待页面解析，且无依赖独立运行，那么应使用 async。</li>
+    <li>如果脚本需要等待页面解析，且依赖于其它脚本，调用这些脚本时应使用 defer，将关联的脚本按所需顺序置于 HTML 中。</li>
+  </ul>
+</body>
+
+</html>

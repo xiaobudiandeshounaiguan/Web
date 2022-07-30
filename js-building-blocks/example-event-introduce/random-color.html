@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Random color example — event handler property</title>
+    <style>
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Change color</button>
+    <script>
+        // 您也可以给同一个监听器注册多个处理器，下面这种方式不能实现这一点：
+        // myElement.onclick = functionA;
+        // myElement.onclick = functionB;
+        // 第二行会覆盖第一行，但是下面这种方式就会正常工作了：
+        // myElement.addEventListener('click', functionA);
+        // myElement.addEventListener('click', functionB);
+        // 当元素被点击时两个函数都会工作：
+        const btn = document.querySelector('button');
+
+        function random(number) {
+            return Math.floor(Math.random() * number);
+        }
+
+        function bgChange() {
+            const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+        }
+
+        btn.onmouseout = bgChange;
+    </script>
+</body>
+
+</html>
